@@ -1,0 +1,55 @@
+.navbar {
+    border-bottom: 1px solid;
+
+    & ul li {
+        border-bottom: 1px solid transparent;
+        transition: all 0.2s;
+
+        &:hover {
+            border-bottom: 1px solid;
+        }
+    }
+}
+.container {
+    margin: 2rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+
+    & .contents {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    & img {
+        width: 25rem;
+        aspect-ratio: 1.1/1;
+    }
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    border-top: 1px solid;
+    background-color: #eeeeee;
+
+    & p {
+        font-weight: 700;
+    }
+
+    & span {
+        font-weight: 500;
+        border-bottom: 1px solid;
+    }
+}
+::-webkit-scrollbar {
+    width: .5rem;
+    background-color: rgb(214, 214, 214);
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(58, 58, 58);
+}

@@ -1,0 +1,74 @@
+* {
+    font-family: 'Consolas';
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+input {
+    outline: none;
+    border: none;
+    background: rgb(235, 235, 235);
+}
+body {
+    background: rgb(55, 143, 243);
+}
+form {
+    max-width: fit-content;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem;
+    background: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.555);
+}
+.container1 {
+    display: flex;
+    gap: 2rem;
+}
+.container2 {
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.content1 {
+    padding: 5px;
+    font-size: medium;
+}
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: medium;
+}
+select {
+    font-size: medium;
+}
+.bio {
+    display: flex;
+    flex-direction: column;
+
+    & textarea {
+        padding: 5px;
+        outline: none;
+        font-size: medium;
+    }
+}
+button {
+    font-size: larger;
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: .5rem;
+    background: rgb(55, 143, 243);
+
+    &:hover {
+        background: rgb(48, 126, 214);
+    }
+
+    &:active {
+        transform: scale(0.9);
+    }
+}

@@ -1,0 +1,173 @@
+* {
+    font-family: 'Consolas';
+}
+body {
+    transition: all .7s;
+}
+.container {
+    text-align: center;
+    border-radius: 25px;
+    padding: 50px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2.5rem;
+    gap: 1rem;  
+    padding: 5%;
+}
+.answer {
+    font-size: medium;
+    border: 1px solid black;
+    outline: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: black;
+    box-shadow: 5px 5px 15px 0 rgb(150, 150, 150);
+}
+.btn {
+    padding: 0.5rem;
+    max-width: fit-content;
+    border: none;
+    border-radius: 15px;
+    border: 2px solid black;
+    background: transparent;
+    cursor: pointer;
+    transition: all .2s;
+}
+.btn:hover {
+    background: black;
+    color: white;
+}
+.btn:active {
+    transform: scale(0.9);
+}
+.btn2 {
+    font-size: large;
+    margin-top: 5px;
+    padding: 0.5rem;
+    max-width: fit-content;
+    border: 2px solid black;
+    border-radius: 15px;
+    background: transparent;
+    cursor: pointer;
+    transition: all .2s;
+}
+.btn2:hover {
+    background: black;
+    color: white;
+}
+.btn2:active {
+    transform: scale(0.9);
+}
+.switchMode2 {
+    font-size: large;
+    margin-top: 5px;
+    padding: 0.5rem;
+    max-width: fit-content;
+    border: 2px solid white;
+    border-radius: 15px;
+    background: transparent;
+    cursor: pointer;
+    transition: all .2s;
+    color: white;
+}
+.switchMode2:hover {
+    background: white;
+    color: black;
+}
+.switchMode2:active {
+    transform: scale(0.9);
+}
+.text {
+    border-right: 5px solid;
+    width: 22rem;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 1.5s steps(16);
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+.mode {
+    margin-top: 2.5rem;
+    margin-left: 2.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    background: black;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+}
+.mode::after {
+    content: '';
+    height: 2rem;
+    width: 2rem;
+    background: white;
+    border-radius: 50px;
+    left: 10px;
+    top: 3px;
+    position: absolute;
+    transition: all 0.3s;
+}
+.mode2 {
+    margin-top: 2.5rem;
+    margin-left: 2.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    background: transparent;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+}
+.mode2::after {
+    content: '';
+    height: 2.5rem;
+    width: 2.5rem;
+    background: white;
+    border-radius: 50px;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+.switchMode {
+    background: black;
+    color: white;
+    transition: all .7s;
+}
+
+@media only screen and (max-width: 320px) {
+    .text {
+        width: 16.5rem;
+        font-size: 30px;
+        transition: all 0.5s;
+    }
+    .cA {
+        font-size: 20px;
+        transition: all 0.5s;
+    }
+    .wA {
+        font-size: 20px;
+        transition: all 0.5s;
+    }
+    .container2 {
+        gap: 70px;
+        transition: all 0.5s;
+    }
+}
