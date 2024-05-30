@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personalized Home Page</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body,
+        h1,
+        p {
+            margin: 0;
+            padding: 0;
+            background-image: url("https://hdqwalls.com/wallpapers/one-piece-anime-artwork-i6.jpg");
+        }
+
+        .info {
+            color: #fff;
+            font-size: 18px;
+            background-image: url("https://tse2.mm.bing.net/th?id=OIP.gfCcUDD4V4A2hVY45DvdPQHaFT&pid=Api&P=0&h=220");
+        }
+
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff;
+        }
+
+
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: white;
+            font-family: italic;
+            background-image: url("https://tse2.mm.bing.net/th?id=OIP.gfCcUDD4V4A2hVY45DvdPQHaFT&pid=Api&P=0&h=220")
+        }
+
+        p {
+            font-size: 19px;
+            line-height: 1.5;
+            text-align: center;
+            color: white;
+            background-image: url("https://tse2.mm.bing.net/th?id=OIP.gfCcUDD4V4A2hVY45DvdPQHaFT&pid=Api&P=0&h=220");
+            background-size: 30px;
+        }
+
+        .img-fluid {
+            border-radius: 40px;
+            border-width: 5px;
+            border-color: cyan;
+            padding-top: 25px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .social-icons a {
+            color: blue;
+            font-size: 34px;
+            margin-right: 10px;
+        }
+
+        .social-icons a:hover {
+            color: black;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .kapoy {
+                color: rgb(255, 255, 255);
+            }
+        }
+
+        @media (max-width: 576px) {
+            .navbar-brand {
+                font-size: 20px;
+            }
+
+            .img-fluid {
+                border-radius: 40px;
+
+
+            }
+
+            .social-icons a {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">MY PERSONALIZED HOMEPAGE</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-5 text-center">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>WELCOME TO MY FIRST BOOTSRAP HOMEPAGE!</h1>
+                <p class="info">IM DARO, RYAN CHRISTIAN T. FROM BSIT 1C I AM 18 YRS OLD AND I LIVE IN CORDOVA CEBU!</p>
+                <div class="col-md-6">
+                    <img src="https://scontent.fceb3-1.fna.fbcdn.net/v/t39.30808-6/426633968_777415387537429_9221504799083474018_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF3RZEk-XqSIcU9EY-XKWFGPaVdnuW0GDM9pV2e5bQYM9F4pKdKbEaw19GKlsU5Nzbz3nbv5-ockCwNISmWD_D7&_nc_ohc=VnzJk_gV68AAX9WWuuE&_nc_ht=scontent.fceb3-1.fna&oh=00_AfCkCSAH2QMvKQ6y3P2zNk1DD1mwFQFPlb1WgTdJqhS5Ng&oe=6612A4FB"
+                        alt="Profile Picture" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container text-center">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p class="kapoy">CONTACT ME: raian.kurisuchan.com | PHONE NUMBER: 09272044781</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

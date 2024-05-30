@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My LogIn Form</title>
+    <style>
+        body {
+            background-image: url("bg1.jpg");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            background-image: url("bg.jpg");
+            background-size: cover;
+            padding: 50px;
+            color: white;
+            margin-top: 100px;
+            border: 1px solid rgb(255, 255, 255, .5);
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid rgb(255, 255, 255, .5);
+            background-color: rgba(56, 56, 56, 0.5);
+            outline: none;
+            box-sizing: border-box;
+            color: white;
+        }
+
+        button {
+            padding: 10px;
+            color: white;
+            background-color: #313131;
+            border: 1px solid rgb(32, 32, 32, .5);
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Login Form</h2>
+        <div>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+        </div>
+        <button type="submit">Login</button>
+    </div>
+</body>
+
+</html>

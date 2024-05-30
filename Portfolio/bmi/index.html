@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY BMI CALCULATOR</title>
+
+    <style>
+        .container {
+            text-align: center;
+        }
+
+        .name1 {
+            margin-bottom: 20px;
+        }
+
+        .name2 {
+            margin-bottom: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h2 class="header">MY BMI CALCULATOR</h2>
+
+        <div>
+
+            <label class="name1" for="weight">WEIGHT (KILOGRAMS):</label>
+            <input type="number" id="kuanWeight" placeholder="PLEASE ENTER YOUR WEIGHT">
+
+        </div>
+
+        <br>
+
+        <div>
+
+            <label class="name2" for="height">HEIGHT (CENTIMETERS):</label>
+
+            <input type="number" id="kuanHeight" placeholder="PLEASE ENTER YOUR HEIGHT">
+
+        </div>
+
+        <br>
+        <button onclick="calculateBMI()">CALCULATE YOUR BMI</button>
+        <div id="resulta"></div>
+
+    </div>
+
+    <br>
+    <br>
+
+    <script>
+        function calculateBMI() {
+            var kuanWeight = parseFloat(document.getElementById('kuanWeight').value);
+            var kuanHeight = parseFloat(document.getElementById('kuanHeight').value) / 100;
+            var bmi = kuanWeight / (kuanHeight * kuanHeight);
+
+            var bmiogunsaka;
+
+            if (bmi <= 18.5) {
+                bmiogunsaka = 'UNDERWEIGHT';
+            } else if (bmi >= 18.5 && bmi <= 24.9) {
+                bmiogunsaka = 'NORMAL WEIGHT';
+            } else if (bmi >= 25 && bmi <= 29.9) {
+                bmiogunsaka = 'OVERWEIGHT';
+            } else {
+                bmiogunsaka = 'OBESITY';
+            }
+
+            document.getElementById('resulta').innerHTML = 'YOUR BMI IS ' + bmi.toFixed(2) + '. YOU ARE ' + bmiogunsaka + '.';
+        }
+
+
+    </script>
+
+</body>
+
+</html>
